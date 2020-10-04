@@ -1,11 +1,11 @@
 import React from 'react';
 
-import BrowseCard from '../notification/browseCard';
+import BrowseCard from './browseCard';
 import Box from '../box';
 
 import {notificationsData} from '../../data/notifications';
 
-export default function MediaElement() {
+export default function NotificationList() {
   return (
     <Box
       flex={1}

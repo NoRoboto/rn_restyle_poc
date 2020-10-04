@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, SafeAreaView, ScrollView} from 'react-native';
 import {ThemeProvider} from '@shopify/restyle';
 
-import MediaElement from './src/components/mediaElement/mediaElement';
+import NotificationList from './src/components/notification/notificationList';
 
 import theme from './src/styles/defaultTheme';
 
@@ -13,7 +13,7 @@ const App: () => React$Node = () => {
         <ScrollView
           style={styles.scrollView}
           contentContainerStyle={styles.scrollViewContentContainerStyles}>
-          <MediaElement />
+          <NotificationList />
         </ScrollView>
       </SafeAreaView>
     </ThemeProvider>
