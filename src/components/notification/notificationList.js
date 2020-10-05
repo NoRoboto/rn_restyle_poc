@@ -7,12 +7,7 @@ import {notificationsData} from '../../data/notifications';
 
 export default function NotificationList() {
   return (
-    <Box
-      flex={1}
-      flexDirection="column"
-      justifyContent="center"
-      alignItems="center"
-      backgroundColor="mainBackground">
+    <>
       {notificationsData.map((notification, index) => {
         return (
           <Box key={index}>
@@ -31,6 +26,6 @@ export default function NotificationList() {
           </Box>
         );
       })}
-    </Box>
+    </>
   );
 }
