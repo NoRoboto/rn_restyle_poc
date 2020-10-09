@@ -3,9 +3,7 @@ import React from 'react';
 import BrowseCard from './browseCard';
 import Box from '../box';
 
-import {notificationsData} from '../../data/notifications';
-
-export default function NotificationList() {
+export default function NotificationList({notificationsData}) {
   return (
     <>
       {notificationsData.map((notification, index) => {
@@ -20,6 +18,8 @@ export default function NotificationList() {
               circleSize={notification.circleSize}
               iconSize={notification.iconSize}
               icon={notification.icon}
+              iconProps={notification.iconProps}
+              textVariants={notification.textVariants}
               onPress={notification.onPress}
             />
             <Box height={15} />
@@ -29,3 +29,5 @@ export default function NotificationList() {
     </>
   );
 }
+
+//@TODO: add Proptypes checker;
