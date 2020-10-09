@@ -32,6 +32,7 @@ const theme = createTheme({
     notificationErrorBackground: palette.red,
     notificationAlertBackground: palette.orange,
     black: 'black',
+    white: 'white',
   },
   spacing: {
     s: 8,
@@ -49,6 +50,16 @@ const theme = createTheme({
       fontSize: 11,
       lineHeight: 18,
       color: 'primaryText',
+    },
+    simpleCardLabelTitle: {
+      fontWeight: 'bold',
+      fontSize: 13,
+      color: 'black',
+    },
+    simpleCardLabel: {
+      fontSize: 11,
+      lineHeight: 18,
+      color: 'black',
     },
   },
   border: {
@@ -79,11 +90,22 @@ const theme = createTheme({
       backgroundColor: 'notificationErrorBackground',
       borderRadius: 10,
     },
-    elevated: {
-      shadowColor: 'black',
-      shadowOpacity: 0.2,
-      shadowRadius: 15,
-      elevation: 5,
+    simple: {
+      width: 350,
+      height: 90,
+      backgroundColor: 'white',
+      borderRadius: 10,
+    },
+    simpleAlert: {
+      width: 350,
+      height: 90,
+      backgroundColor: 'white',
+      borderRadius: 10,
+    },
+    simpleError: {
+      width: 350,
+      height: 90,
+      backgroundColor: 'white',
       borderRadius: 10,
     },
   },
@@ -99,6 +121,9 @@ const theme = createTheme({
     },
     error: {
       backgroundColor: 'notificationErrorRedFade',
+    },
+    simple: {
+      backgroundColor: 'notificationInfoWhiteFade',
     },
   },
   // @TODO: redefine breakpoint on future work
