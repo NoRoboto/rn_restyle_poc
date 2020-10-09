@@ -20,6 +20,8 @@ const BrowseCard = ({
   initialFocus,
   circleSize,
   iconSize,
+  iconProps, //@TODO: rename and add missing prop.
+  textVariants,
   ...rest
 }) => {
   const props = useRestyle(restyleFunctions, rest);
@@ -37,18 +39,19 @@ const BrowseCard = ({
             circleSize={circleSize}
             iconSize={iconSize}
             icon={icon}
+            iconProps={iconProps}
             variant={props.variant}
           />
           <Box flex={0.7} paddingLeft="s" paddingRight="l">
-            <Text variant="browseCardLabelTitle" paddingBottom="s">
+            <Text variant={textVariants.title} paddingBottom="s">
               {cardTitle}
             </Text>
-            <Text variant="browseCardLabel" textBreakStrategy="simple">
+            <Text variant={textVariants.body} textBreakStrategy="simple">
               {cardDescription}
             </Text>
           </Box>
           <Box flex={0.1}>
-            <Text variant="browseCardLabel">{cardTime}</Text>
+            <Text variant={textVariants.body}>{cardTime}</Text>
           </Box>
         </Box>
       </Card>
@@ -65,6 +68,8 @@ BrowseCard.propTypes = {
   icon: PropTypes.any, // @TODO: replace by correct one
   circleSize: PropTypes.number,
   iconSize: PropTypes.number,
+  iconProps: PropTypes.object, // @TODO: replace by correct one
+  textVariants: PropTypes.object,
 };
 
 BrowseCard.defaultProps = {
