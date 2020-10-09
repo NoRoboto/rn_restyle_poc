@@ -20,6 +20,7 @@ export default function NotificationList({notificationsData}) {
               icon={notification.icon}
               iconProps={notification.iconProps}
               textVariants={notification.textVariants}
+              circleProps={notification.circleProps}
               onPress={notification.onPress}
             />
             <Box height={15} />
