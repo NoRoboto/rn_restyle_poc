@@ -17,9 +17,8 @@ const restyleFunctions = [spacing, border, backgroundColor, color];
 export default function NotificationHeader({
   icon,
   iconSize,
-  circleSize,
-  variant,
   iconProps,
+  circleProps,
 }) {
   const restyleIconProps = useRestyle(restyleFunctions, iconProps || {});
 
@@ -30,7 +29,7 @@ export default function NotificationHeader({
         height="100%"
         alignItems="center"
         justifyContent="center">
-        <Circle size={circleSize} variant={variant}>
+        <Circle size={circleProps.circleSize} variant={circleProps.variant}>
           <FontAwesomeIcon {...restyleIconProps} size={iconSize} icon={icon} />
         </Circle>
       </Box>
@@ -42,8 +41,7 @@ export default function NotificationHeader({
 
 NotificationHeader.propTypes = {
   icon: PropTypes.any, // @TODO: replace by correct one
-  iconSize: PropTypes.number,
-  circleSize: PropTypes.number,
+  circleProps: PropTypes.object,
   variant: PropTypes.string,
 };
 
