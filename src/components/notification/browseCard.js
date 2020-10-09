@@ -22,6 +22,7 @@ const BrowseCard = ({
   iconSize,
   iconProps, //@TODO: rename and add missing prop.
   textVariants,
+  circleProps,
   ...rest
 }) => {
   const props = useRestyle(restyleFunctions, rest);
@@ -36,11 +37,11 @@ const BrowseCard = ({
           flexDirection="row"
           paddingHorizontal="s">
           <NotificationHeader
-            circleSize={circleSize}
             iconSize={iconSize}
             icon={icon}
             iconProps={iconProps}
             variant={props.variant}
+            circleProps={circleProps}
           />
           <Box flex={0.7} paddingLeft="s" paddingRight="l">
             <Text variant={textVariants.title} paddingBottom="s">
@@ -70,6 +71,7 @@ BrowseCard.propTypes = {
   iconSize: PropTypes.number,
   iconProps: PropTypes.object, // @TODO: replace by correct one
   textVariants: PropTypes.object,
+  circleProps: PropTypes.object,
 };
 
 BrowseCard.defaultProps = {
