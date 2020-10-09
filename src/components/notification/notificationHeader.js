@@ -1,16 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {
+  useRestyle,
+  spacing,
+  border,
+  backgroundColor,
+  color,
+} from '@shopify/restyle';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 
 import Box from '../box';
 import Circle from '../circle';
+
+const restyleFunctions = [spacing, border, backgroundColor, color];
 
 export default function NotificationHeader({
   icon,
   iconSize,
   circleSize,
   variant,
+  iconProps,
 }) {
+  const restyleIconProps = useRestyle(restyleFunctions, iconProps || {});
+
   if (icon) {
     return (
       <Box
@@ -19,7 +31,7 @@ export default function NotificationHeader({
         alignItems="center"
         justifyContent="center">
         <Circle size={circleSize} variant={variant}>
-          <FontAwesomeIcon color="white" size={iconSize} icon={icon} />
+          <FontAwesomeIcon {...restyleIconProps} size={iconSize} icon={icon} />
         </Circle>
       </Box>
     );
