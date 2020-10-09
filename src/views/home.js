@@ -2,6 +2,7 @@ import React from 'react';
 import Box from '../components/box';
 
 import NotificationList from '../components/notification/notificationList';
+import {notificationsData} from '../data/notifications';
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       justifyContent="center"
       alignItems="center"
       backgroundColor="mainBackground">
-      <NotificationList />
+      <NotificationList notificationsData={notificationsData} />
     </Box>
   );
 }
