@@ -1,4 +1,5 @@
 import Home from '../../views/home';
+import Variant1 from '../../views/variants1';
 
 export const tabsData = [
   {
@@ -7,6 +8,6 @@ export const tabsData = [
   },
   {
     name: 'Home2',
-    component: Home,
+    component: Variant1,
   },
 ];

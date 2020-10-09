@@ -9,6 +9,8 @@ export const notificationsData = [
     circleSize: 30,
     iconSize: 12,
     icon: faFileUpload,
+    iconProps: {color: 'white'},
+    textVariants: {title: 'browseCardLabelTitle', body: 'browseCardLabel'},
     onPress: () => console.warn('1'),
   },
   {
@@ -19,6 +21,8 @@ export const notificationsData = [
     circleSize: 30,
     iconSize: 12,
     icon: faTrash,
+    iconProps: {color: 'white'},
+    textVariants: {title: 'browseCardLabelTitle', body: 'browseCardLabel'},
     onPress: () => console.warn('2'),
   },
   {
@@ -29,6 +33,45 @@ export const notificationsData = [
     circleSize: 30,
     iconSize: 12,
     icon: faSync,
+    iconProps: {color: 'white'},
+    textVariants: {title: 'browseCardLabelTitle', body: 'browseCardLabel'},
+    onPress: () => console.warn('3'),
+  },
+];
+
+export const simpleNotificationsData = [
+  {
+    variant: 'simple',
+    cardTitle: 'File Updated',
+    cardDescription: 'Your file has been successfully uploaded.',
+    cardTime: '1 day',
+    circleSize: 30,
+    iconSize: 12,
+    icon: faFileUpload,
+    iconProps: {color: 'white'}, //restyle theme object map
+    textVariants: {title: 'browseCardLabelTitle', body: 'browseCardLabel'},
+    onPress: () => console.warn('1'),
+  },
+  {
+    variant: 'error',
+    cardTitle: 'File Deleted',
+    cardDescription: 'Your file has been successfuly deleted.',
+    cardTime: '1 day',
+    circleSize: 30,
+    iconSize: 12,
+    icon: faTrash,
+    textVariants: {title: 'browseCardLabelTitle', body: 'browseCardLabel'},
+    onPress: () => console.warn('2'),
+  },
+  {
+    variant: 'alert',
+    cardTitle: 'Papssword Reset',
+    cardDescription: 'Your password has been restored successfuly.',
+    cardTime: '1 day',
+    circleSize: 30,
+    iconSize: 12,
+    icon: faSync,
+    textVariants: {title: 'browseCardLabelTitle', body: 'browseCardLabel'},
     onPress: () => console.warn('3'),
   },
 ];
