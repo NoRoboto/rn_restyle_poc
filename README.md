@@ -12,7 +12,11 @@ React native theme example <a href="https://github.com/Shopify/restyle"> using s
 
 ## Introduction
 
-Simple demo using theme management provided by restyle!. One component, different styles, saving tons of lines of code.
+Simple demo using theme management provided by restyle!, one component; different styles, saving tons of lines of code.
+
+<p align="center">
+  <img alt="gif header demo" src="https://github.com/NoRoboto/rn_restyle_poc/blob/main/resources/type3.gif?raw=true" width="450">
+</p>
 
 ## WIP
 
