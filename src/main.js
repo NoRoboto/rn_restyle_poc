@@ -10,7 +10,6 @@ export default function Main() {
       <ScrollView
         style={styles.container}
         contentContainerStyle={styles.scrollViewContentContainerStyles}>
-        <Text>Main!</Text>
         <AppTabs tabs={tabsData} />
       </ScrollView>
     </SafeAreaView>
