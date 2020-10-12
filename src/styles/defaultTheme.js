@@ -176,6 +176,14 @@ const theme = createTheme({
       backgroundColor: 'notificationSimpleErrorFade',
     },
   },
+  bottomTabNavigatorStyle: {
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: 'mainBackground',
+  },
+  bottomTabNavigatorTextStyle: {
+    fontSize: 15,
+  },
   // @TODO: redefine breakpoint on future work
   breakpoints: {
     phone: 0,
