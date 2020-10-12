@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, ScrollView, SafeAreaView, Text} from 'react-native';
+import {StyleSheet, ScrollView, SafeAreaView} from 'react-native';
 
 import AppTabs from './routing/tabs/primaryTab';
 import {tabsData} from './routing/tabs/tabsData';
